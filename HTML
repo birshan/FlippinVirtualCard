@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Testing</title>
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css", rel="stylesheet"><!--Unique Icons from bootstrapcdn.com -->
+	
+	<link rel="stylesheet" href="FlippinStyle.css"><!--External CSS file -->
+
+
+</head>
+<body>
+	<div class="card">
+		<div class="front" id="fronts"> <!--The html for the front side of the virtual card -->
+
+
+				<div class="details">
+					<h2 id="text">Login </h2><br>
+
+			<form action="validation.php" method="post">
+				
+				<div class="form-group">
+					<label>Username</label>
+					<input type="text" name="user" class="form-control" required="*" style="max-width: 300px;">
+				<br>
+				<br>
+			
+					<label>Password</label>
+					<input type="Password" name="Password" class="form-control" required="*" style="max-width: 300px;">
+				</div>
+					<button type="submit" class="btn btn-primary">Login</button>
+				
+
+
+			</form>
+			<br>
+					<i class="fa fa-user-plus" aria-hidden="true" onclick="FlipToRegister()"> Sign up </i>
+					
+			</div>
+
+
+
+
+		</div>
+			
+		<div class="back" id="backs"> <!--The html for the back side of the virtual card -->
+			<div class="details">
+					<h2 id="text" >Sign-up </h2><br>
+
+			<form action="registration.php" method="post">
+				
+				<div class="form-group">
+					<label>Username</label>
+					<input type="text" name="user" class="form-control" required="*" style="max-width: 300px;">
+				<br>
+				<br>
+				
+					<label>Password</label>
+					<input type="Password" name="Password" class="form-control" required="*" style="max-width: 300px;">
+				</div>
+					<button type="submit" class="btn btn-primary">Sign-up</button>
+				
+
+
+			</form>
+			<br>
+					<i class="fa fa-sign-in" aria-hidden="true" onclick="FlipFuction()"> Login </i>
+					
+			</div>
+		</div>
+	</div>
+
+<script src="FlippinFunctions.js"></script> <!-- Calls functions which works with CSS classes to flip the card.-->
+
+
+</body>
+</html>
